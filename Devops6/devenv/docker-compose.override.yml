@@ -1,0 +1,13 @@
+# Только для стенда из прошлых лабораторных: подключаем уже существующие тома,
+# чтобы сохранить учётные записи Gitea и данные Redmine.
+# На новой машине этот файл не нужен — удалите его.
+volumes:
+  gitea:
+    external: true
+    name: cicd_gitea
+  redmine-db:
+    external: true
+    name: redmine_db
+  redmine-files:
+    external: true
+    name: redmine_files
